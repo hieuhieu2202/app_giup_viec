@@ -267,8 +267,8 @@ class _TrangChuState extends State<TrangChu> {
                   //   ),
                   // )
                   Container(
-                    // height: 500,
-                    // color: Colors.red,
+                    height: 500,
+                     // color: Colors.red,
                     padding: EdgeInsets.all(15),
                     width: MediaQuery.of(context).size.width,
                     child: GridView(
