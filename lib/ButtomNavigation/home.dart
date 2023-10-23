@@ -116,181 +116,32 @@ class _TrangChuState extends State<TrangChu> {
                   const SizedBox(
                     height: 20,
                   ),
-                  // Container(
-                  //   width: MediaQuery.of(context).size.width,
-                  //   height: 460,
-                  //   margin: EdgeInsets.all(5.0),
-                  //   // color: Colors.white,
-                  //   child: Column(
-                  //     crossAxisAlignment: CrossAxisAlignment.start,
-                  //     mainAxisAlignment: MainAxisAlignment.center,
-                  //     children: [
-                  //       Row(
-                  //         mainAxisAlignment: MainAxisAlignment.center,
-                  //         children: [
-                  //           ElevatedButton(
-                  //               onPressed: () {
-                  //                 // Navigator.of(context).push(
-                  //                 // MaterialPageRoute(
-                  //                 // builder: (context) => FindAddress(),
-                  //                 // ),
-                  //                 // );
-                  //               },
-                  //               style: ButtonStyle(
-                  //                 backgroundColor:
-                  //                     MaterialStateProperty.all<Color>(
-                  //                         Colors.white),
-                  //                 fixedSize: MaterialStateProperty.all<Size>(
-                  //                     Size(175, 200)),
-                  //               ),
-                  //               child: Column(
-                  //                 mainAxisAlignment: MainAxisAlignment.center,
-                  //                 children: [
-                  //                   ClipOval(
-                  //                       child: Image.asset(
-                  //                     'assets/image/icon_clean.jpg',
-                  //                     width: 100,
-                  //                     height: 100,
-                  //                   )),
-                  //                   const SizedBox(height: 10),
-                  //                   const Text(
-                  //                     'Dọn dẹp',
-                  //                     style: TextStyle(
-                  //                       fontSize: 18,
-                  //                       color: Colors.black,
-                  //                       fontFamily: 'Montserrat_light',
-                  //                     ),
-                  //                   )
-                  //                 ],
-                  //               )),
-                  //           const SizedBox(width: 15),
-                  //           ElevatedButton(
-                  //               onPressed: () {},
-                  //               style: ButtonStyle(
-                  //                 backgroundColor:
-                  //                     MaterialStateProperty.all<Color>(
-                  //                         Colors.white),
-                  //                 fixedSize: MaterialStateProperty.all<Size>(
-                  //                     Size(175, 200)),
-                  //               ),
-                  //               child: Column(
-                  //                 mainAxisAlignment: MainAxisAlignment.center,
-                  //                 children: [
-                  //                   ClipOval(
-                  //                       child: Image.asset(
-                  //                     'assets/image/icon_clean_house.jpg',
-                  //                     width: 100,
-                  //                     height: 100,
-                  //                   )),
-                  //                   SizedBox(height: 10),
-                  //                   const Text(
-                  //                     'Dọn dẹp nhà',
-                  //                     style: TextStyle(
-                  //                       fontSize: 18,
-                  //                       color: Colors.black,
-                  //                       fontFamily: 'Montserrat_light',
-                  //                     ),
-                  //                   )
-                  //                 ],
-                  //               )),
-                  //         ],
-                  //       ),
-                  //       SizedBox(
-                  //         height: 20,
-                  //       ),
-                  //       Row(
-                  //         mainAxisAlignment: MainAxisAlignment.center,
-                  //         crossAxisAlignment: CrossAxisAlignment.start,
-                  //         children: [
-                  //           ElevatedButton(
-                  //               onPressed: () {},
-                  //               style: ButtonStyle(
-                  //                 backgroundColor:
-                  //                     MaterialStateProperty.all<Color>(
-                  //                         Colors.white),
-                  //                 fixedSize: MaterialStateProperty.all<Size>(
-                  //                     Size(175, 200)),
-                  //               ),
-                  //               child: Column(
-                  //                 mainAxisAlignment: MainAxisAlignment.center,
-                  //                 children: [
-                  //                   ClipOval(
-                  //                     child: Image.asset(
-                  //                       'assets/image/cleanning.jpg',
-                  //                       width: 100,
-                  //                       height: 100,
-                  //                     ),
-                  //                   ),
-                  //                   const SizedBox(height: 10),
-                  //                   const Text(
-                  //                     'Đang dọn dẹp',
-                  //                     style: TextStyle(
-                  //                       fontSize: 18,
-                  //                       color: Colors.black,
-                  //                       fontFamily: 'Montserrat_light',
-                  //                     ),
-                  //                   )
-                  //                 ],
-                  //               )),
-                  //           const SizedBox(width: 15),
-                  //           ElevatedButton(
-                  //               onPressed: () {},
-                  //               style: ButtonStyle(
-                  //                 backgroundColor:
-                  //                     MaterialStateProperty.all<Color>(
-                  //                         Colors.white),
-                  //                 fixedSize: MaterialStateProperty.all<Size>(
-                  //                     Size(175, 200)),
-                  //               ),
-                  //               child: const Column(
-                  //                 mainAxisAlignment: MainAxisAlignment.center,
-                  //                 children: [
-                  //                   Icon(
-                  //                     Icons.add_circle_outline,
-                  //                     size: 100,
-                  //                     color: Colors.green,
-                  //                   ),
-                  //                   SizedBox(height: 10),
-                  //                   Text(
-                  //                     'Dịch vụ',
-                  //                     style: TextStyle(
-                  //                       fontSize: 18,
-                  //                       color: Colors.black,
-                  //                       fontFamily: 'Montserrat_light',
-                  //                     ),
-                  //                   )
-                  //                 ],
-                  //               )),
-                  //         ],
-                  //       ),
-                  //     ],
-                  //   ),
-                  // )
                   Container(
                     height: 500,
-                     // color: Colors.red,
+                    // color: Colors.red,
                     padding: EdgeInsets.all(15),
                     width: MediaQuery.of(context).size.width,
                     child: GridView(
-                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                       // padding:  EdgeInsets.all(10),
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                        // padding:  EdgeInsets.all(10),
                         crossAxisSpacing: 10,
                         mainAxisSpacing: 20,
                         mainAxisExtent: 220,
                         // shrinkWrap: true,
                         crossAxisCount: 2,
                       ),
-
                       children: List.generate(dataList.length, (index) {
-                        if (dataList[index].containsKey('image')){
+                        if (dataList[index].containsKey('image')) {
                           return ElevatedButton(
                             onPressed: () {
                               // Xử lý khi nút được nhấn
                             },
                             style: ButtonStyle(
-                              backgroundColor:
-                              MaterialStateProperty.all<Color>(Colors.white),
-                              minimumSize: MaterialStateProperty.all<Size>(const Size(175, 300)),
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
+                              minimumSize: MaterialStateProperty.all<Size>(
+                                  const Size(175, 300)),
                             ),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -314,23 +165,23 @@ class _TrangChuState extends State<TrangChu> {
                               ],
                             ),
                           );
-                        }
-                        else {
+                        } else {
                           return ElevatedButton(
                             onPressed: () {
                               // Xử lý khi nút được nhấn
                             },
                             style: ButtonStyle(
-                              backgroundColor:
-                              MaterialStateProperty.all<Color>(Colors.white),
-                              minimumSize:
-                              MaterialStateProperty.all<Size>(const Size(175, 300)),
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
+                              minimumSize: MaterialStateProperty.all<Size>(
+                                  const Size(175, 300)),
                             ),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                const Icon(Icons.add_circle_outline,
-                                size: 100,
+                                const Icon(
+                                  Icons.add_circle_outline,
+                                  size: 100,
                                   color: Colors.green,
                                 ),
                                 const SizedBox(height: 10),
