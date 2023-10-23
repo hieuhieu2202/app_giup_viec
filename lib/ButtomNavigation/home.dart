@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:app_giup_viec/maps.dart';
 class TrangChu extends StatefulWidget {
   const TrangChu({super.key});
 
@@ -12,6 +12,13 @@ class _TrangChuState extends State<TrangChu> {
     {
       'image': 'assets/image/icon_clean.jpg',
       'text': 'Dọn dẹp',
+      'onPressed': (BuildContext context) {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+              builder: (context) => FindAddress(),
+          )
+        );
+      },
     },
     {
       'image': 'assets/image/icon_clean_house.jpg',
