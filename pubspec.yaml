@@ -35,6 +35,9 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  open_street_map_search_and_pick: ^0.1.0
+  page_transition: ^2.1.0
+  provider: ^6.0.5
 
 dev_dependencies:
   flutter_test:
@@ -58,6 +61,13 @@ flutter:
     - assets/image/ic_background.png
     - assets/image/cleanning.jpg
     - assets/image/background.jpg
+    - assets/image/icon_cho_lam.jpg
+    - assets/image/icon_laplai.jpg
+    - assets/image/ic_hom_thu.jpg
+    - assets/image/ic_thongbao.png
+    - assets/image/icon_gg.png
+    - assets/image/ic_fb.png
+    - assets/image/icon_book.jpg
   fonts:
     - family: Montserrat
       fonts:

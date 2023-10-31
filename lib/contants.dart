@@ -1,0 +1,1 @@
+const String laplai='Lịch lă lại hàng tuần sẽ được hiển thị tại đây. Để tạo lịch lặp lại hàng tuần, bạn cần chọn mục lặp lại hàng tuần khi đăng việc. Hệ thông sẽ tự động đăng việc trước và ngày để đảm bảo công việc cu bạn luôn có người nhận, Bạn có tể tạm ngưng, tiếp tục hoặc hủy lịch lặp lại vào bất kỳ lúc nào.';

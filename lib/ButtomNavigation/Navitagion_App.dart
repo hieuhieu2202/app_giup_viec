@@ -3,42 +3,36 @@ import 'package:app_giup_viec/ButtomNavigation/home.dart';
 import 'package:app_giup_viec/ButtomNavigation/hoatdong.dart';
 import 'package:app_giup_viec/ButtomNavigation/taikhoan.dart';
 import 'package:app_giup_viec/ButtomNavigation/tinnhan.dart';
-class Navigation_App extends StatelessWidget {
-  const Navigation_App({super.key});
+
+class Navigation_App extends StatefulWidget {
+  final int selectedIndex;
+  const Navigation_App({Key? key, required this.selectedIndex}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return _Navigation_App();
-  }
+  _NavigationAppState createState() => _NavigationAppState(selectedIndex);
 }
 
-class _Navigation_App extends StatefulWidget {
-
-  @override
-  State<_Navigation_App> createState() => _Navigation_AppState();
-}
-
-class _Navigation_AppState extends State<_Navigation_App> {
-  int _slectIndex=0;
-  final List<Widget> widgetOption = <Widget>[
+class _NavigationAppState extends State<Navigation_App> {
+  int _selectedIndex = 0;
+  final List<Widget> _widgetOptions = <Widget>[
     const TrangChu(),
     const HoatDong(),
     const TinNhan(),
     const TaiKhoan(),
   ];
 
+  _NavigationAppState(this._selectedIndex);
+
   void _onItemTapped(int index) {
     setState(() {
-      _slectIndex = index;
+      _selectedIndex = index;
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBody: true,
-      body: SafeArea(
-          child: widgetOption[_slectIndex],
-      ),
+      body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.white,
         type: BottomNavigationBarType.fixed,
@@ -62,13 +56,10 @@ class _Navigation_AppState extends State<_Navigation_App> {
             label: 'Tài khoản',
           ),
         ],
-        currentIndex: _slectIndex,
+        currentIndex: _selectedIndex,
         selectedItemColor: Colors.amber[800],
         onTap: _onItemTapped,
       ),
     );
   }
 }
-
-
-
